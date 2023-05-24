@@ -43,7 +43,7 @@ config = DefaultTransactionBuildersConfiguration(network_config.chain_id)
 
 signer = UserSigner.from_pem_file(Path("/path/wallet.pem"))
 
-smart_send = SmartSend(account, config, "MY_CONTRACT_ADDRESS")
+smart_send = SmartSend(account, config, "MY_CONTRACT_BECH32_ADDRESS")
 
 input_transactions: List[TokenAmount] = []
 for i in range(1, 10):
